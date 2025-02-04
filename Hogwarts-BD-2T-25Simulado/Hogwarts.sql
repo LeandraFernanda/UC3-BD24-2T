@@ -22,7 +22,7 @@ select * from materia
 CREATE TABLE professor (
     id_professor INT  PRIMARY KEY,
     nome_professor VARCHAR(50) NOT NULL,
-    materia_id INT
+   foreign key (materia_id) reference materia(id_materia)
 );
 select * from professor
 
